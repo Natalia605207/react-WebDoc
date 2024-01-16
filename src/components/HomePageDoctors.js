@@ -26,7 +26,7 @@ function HomePageDoctors() {
                     )
                 })}
             </div>
-            <div class="center">
+            <div className="center">
             <button className="form-btn">
                     <Link to="/doctors" className="doctors-link">View All Doctors</Link>
                 </button>
