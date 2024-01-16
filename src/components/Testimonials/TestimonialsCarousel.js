@@ -16,7 +16,7 @@ export const TestimonialsCarousel = () => (
         {dataTestimonials.map((slide) => (
           <div key={slide.id} className="react-carousel-slide">
             <div className="image-wrapper">
-              <img className="testimonial-image" src={slide.image} />
+              <img className="testimonial-image" src={slide.image} alt="client" />
             </div>
             <p className="testimonial-name">{slide.name}</p>
             <p className="testimonial-text">{slide.text}</p>
