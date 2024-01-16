@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   MDBFooter,
   MDBContainer,
@@ -21,16 +22,16 @@ export default function Footer() {
             </div>
     
             <div>
-              <a href='https://www.facebook.com' className='me-4 text-light bg-dark'>
+              <a href='https://www.facebook.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
                 <MDBIcon fab icon="facebook-f" />
               </a>
-              <a href='https://www.twitter.com' className='me-4 text-light bg-dark'>
+              <a href='https://www.twitter.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
                 <MDBIcon fab icon="twitter" />
               </a>
-              <a href='https://www.instagram.com' className='me-4 text-light bg-dark'>
+              <a href='https://www.instagram.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
                 <MDBIcon fab icon="instagram" />
               </a>
-              <a href='https://www.linkedin.com' className='me-4 text-light bg-dark'>
+              <a href='https://www.linkedin.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
                 <MDBIcon fab icon="linkedin" />
               </a>
             </div>
@@ -42,7 +43,7 @@ export default function Footer() {
                 <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                   <h6 className='text-uppercase fw-bold mb-4'>
                     <MDBIcon icon="gem" className="me-3 text-light bg-dark" />
-                    <a href='/' className='text-light bg-dark text-decoration-none'>WebDoc</a>
+                    <Link to="/" className='text-light bg-dark text-decoration-none'>WebDoc</Link>
                   </h6>
                   <p className='text-light bg-dark'>
                     We are always ready to help you. Just contact us any way you like
@@ -53,33 +54,33 @@ export default function Footer() {
                 <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 text-light bg-dark'>
                   <h6 className='text-uppercase fw-bold mb-4'>Useful Links</h6>
                   <p>
-                    <a href='/' className='text-light bg-dark'>
+                  <Link to="/" className='text-light bg-dark'>
                       Home
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a href='/doctors' className='text-light bg-dark'>
+                    <Link to='/doctors' className='text-light bg-dark'>
                       Doctors
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a href='/about' className='text-light bg-dark'>
+                    <Link to='/about' className='text-light bg-dark'>
                       Our company
-                    </a>
+                    </Link>
                   </p>
                 </MDBCol>
     
                 <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4 text-light bg-dark'>
                   <h6 className='text-uppercase fw-bold mb-4'>Customer care</h6>
                   <p>
-                    <a href='/faqs' className='text-light bg-dark'>
+                    <Link to='/faqs' className='text-light bg-dark'>
                       FAQs
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a href='/privacy' className='text-light bg-dark'>
+                    <Link to='/privacy' className='text-light bg-dark'>
                       Privacy policy
-                    </a>
+                    </Link>
                   </p>
                   <p>
                     <a href='mailto:natalyaobukhova87@gmail.com' className='text-light bg-dark'>
