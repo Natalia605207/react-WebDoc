@@ -1,0 +1,114 @@
+.image {
+    display: block;
+    width: 100%;
+}
+
+.carousel-heading {
+    font-size: 50px;
+}
+
+.consultationBtn {
+    background: #61bcba;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+.form-link {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 16px;
+}
+
+.font {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 60px;
+}
+
+.smaller {
+    font-size: 35px;
+}
+
+.carousel-text {
+    position: absolute;
+    margin-bottom: 20%;
+}
+
+a.carousel-control-prev, a.carousel-control-next {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .font {
+        font-size: 50px;
+    }
+    
+    .smaller {
+        font-size: 30px;
+    }
+    
+    .carousel-text {
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .font {
+        font-size: 40px;
+    }
+    
+    .smaller {
+        font-size: 25px;
+    }
+    
+    .carousel-text {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .font {
+        font-size: 30px;
+    }
+    
+    .smaller {
+        font-size: 20px;
+    }
+    
+    .carousel-text {
+        margin-bottom: -3%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .font {
+        font-size: 25px;
+    }
+    
+    .smaller {
+        font-size: 16px;
+    }
+    
+    .carousel-text {
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .font {
+        font-size: 20px;
+    }
+    
+    .smaller {
+        font-size: 16px;
+    }
+    
+    .carousel-text {
+        margin-bottom: -5%;
+    }
+}
+
+
+
+

@@ -1,38 +1,448 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section {
+    padding: 50px 200px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.mediCare, .form, .homeDoctors {
+    background: #f2f2f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+    padding: 30px 0px;
+    font-size: 40px;
+    text-align: center;
 }
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.point {
+    border-radius: 5px;
+    padding:  5% 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    margin: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.3);
+}
+
+.point-icon {
+    color:#61bcba;
+    font-size: 40px;
+}
+
+.questions {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.help {
+    padding: 0px 0px 30px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.general {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    margin: 10px;
+}
+
+.general-icon {
+    color:#61bcba;
+    font-size: 60px;
+}
+
+.padding {
+    padding-top: 10px;
+}
+
+.form {
+    padding: 60px 5px;
+}
+
+form {
+    width: 70%;
+}
+
+.form-block {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    align-self: flex-start;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.input {
+    height: 50px;
+    padding: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+.private-policy {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.privacy-link {
+    color:#009282;
+    text-decoration: underline;
+}
+
+.privacy-link:hover {
+    color:#000000;
+}
+
+.form-btn {
+    background: #61bcba;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 3px;
+    color:#ffffff;
+    font-size: 18px;
+    margin: 20px 0px 0px;
+}
+
+.form-btn:hover {
+    background: #009282;
+}
+
+.form-feedback {
+    padding: 90px 5px 60px;
+    background-color: #f2f2f2;
+}
+
+.form-response {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.privacy, .doctors {
+    font-family: 'Open Sans', sans-serif;
+    margin: 70px 200px;
+}
+
+.heading-policy {
+    text-align: center;
+    padding: 40px 5px;
+    font-weight: 700;
+}
+
+.privacy-passage {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.subheading-policy {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.about-doctor {
+    font-family: 'Open Sans', sans-serif;
+    margin: 60px 0px 0px;
+}
+
+.aboutDoctor-icon {
+    color: #009282;
+    font-size: 27px;
+    padding-right: 7px;
+}
+
+.showMoreBtn {
+    border: none;
+    background-color: #ffffff;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.doctor-image {
+    width: 200px;
+    height: 300px;  
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.doctor-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profession {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 30px;
+}
+
+.doctors-link {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.doctors-link:hover {
+    color:#ffffff;
+}
+
+.faqs, .aboutUs, .about-information, .our-doctors {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs-photo {
+    background-image: url("https://img.freepik.com/free-photo/doctor-reading-coronavirus-patient-medical-chart_53876-139569.jpg?w=1380&t=st=1704321834~exp=1704322434~hmac=083ca19f410c419683ac08cd7f6773975b6b1b4321d562c5af6df730d06a60bc");
+}
+
+.aboutUs-photo {
+    background-image: url("https://img.freepik.com/free-photo/close-up-doctor-holding-eyeglasses_23-2148728350.jpg?size=626&ext=jpg&uid=R86882888&ga=GA1.1.748415115.1670098303&semt=sph");
+}
+
+.doctors-photo {
+    background-image: url("https://img.freepik.com/free-photo/team-of-healthcare-experts-examining-xray-image-at-medical-clinic_637285-11162.jpg?size=626&ext=jpg&uid=R86882888&ga=GA1.1.748415115.1670098303&semt=ais");
+}
+
+.top-heading {
+    font-size: 50px;
+    color:#ffffff;
+    text-shadow: 0px 0px 10px #000000;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 200px;
+    gap: 50px;
+}
+
+.reverse {
+    background-color: #f2f2f2;
+}
+
+.about-photo {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.filter-icon {
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.margin {
+    margin-bottom: 5px;
+}
+
+.need-help {
+    padding: 60px 10px 60px;
+    background-color:rgba(97,188,186,0.6);
+}
+
+.email {
+    color:#000000;
+}
+
+@media screen and (max-width: 1300px) {
+    .line {
+        padding: 60px 50px;
+    }
+
+    .doctors {
+        margin: 50px 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+.about-doctor {
+    margin: 0px;
+}
+}
+
+@media screen and (max-width: 860px) {
+    section {
+        padding: 50px 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .privacy {
+        margin: 50px 60px;
+    }
+
+    .doctors {
+        margin: 30px 60px;
+    }
+
+    .heading-policy {
+        padding: 0px 5px 40px;
+    }
+
+    .subheading-policy {
+        font-size: 22px;
+    }
+
+    .form {
+        padding: 50px 5px;
+    }
+
+    .top-photo {
+        height: 300px;
+    }
+
+    .about-photo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-photo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    section {
+        padding: 20px 10px;
+    }
+
+    .top-heading {
+        font-size: 35px;
+    }
+
+    .heading {
+        padding: 20px 0px;
+        font-size: 35px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form, .need-help  {
+        padding: 35px 5px;
+    }
+
+    .privacy, .doctors {
+        margin: 40px 20px;
+    }
+
+    .heading-policy {
+        padding: 0px 5px 30px;
+    }
+
+    .top-photo {
+        height: 200px;
+    }
+
+    .line {
+        padding: 50px 15px 70px;
+        gap: 30px;
+    }
+
+    .about-heading {
+        font-size: 30px;
+    }
+
+    .doctor-image {
+        width: 180px;
+        height: 260px;  
+    }
+
+    .form-btn {
+        padding: 7px 30px;
+        font-size: 17px;
+    }
+}
+
+
+
