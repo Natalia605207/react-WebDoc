@@ -2,8 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
@@ -28,8 +27,8 @@ function App() {
         buttonText="Accept All"
         declineButtonText="Decline All"
         cookieName="myAppCookieConsent"
-        style={{ background: "#fff", color: "#000000", justifyContent: "center", textAlign: "center" }}
-        buttonStyle={{ color: "#000000", fontSize: "13px", background: "#009282", padding: "7px 20px", borderRadius: "3px", border: '1px solid #009282' }}
+        style={{ background: "#fff", color: "#000000", justifyContent: "center", textAlign: "center", boxShadow: "2px 2px 10px #000000" }}
+        buttonStyle={{ color: "#fff", fontSize: "13px", background: "#009282", padding: "7px 20px", borderRadius: "3px", border: '1px solid #009282' }}
         declineButtonStyle={{ color: "#009282", fontSize: "13px",  background: "#fff", border: '1px solid #009282',  padding: "7px 20px", borderRadius: "3px" }} 
         expires={5}
         enableDeclineButton
@@ -41,7 +40,7 @@ function App() {
         }}
       >
         This website uses cookies provided to enhance user experience and analyze performance and traffic
-        on our website. <Link to="/privacy"><span className="privacy-link">Learn more about gathering information.</span></Link>
+        on our website. <a href="/privacy"><span className="privacy-link">Learn more about gathering information.</span></a>
       </CookieConsent>
       <Router>
         <ScrollToTop />
