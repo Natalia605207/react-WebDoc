@@ -17,7 +17,8 @@ import Form from "./components/Form";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { BottomNav } from "./components/BottomNavigation/BottomNav";
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
+import Cookies from 'js-cookie';
 
 function App() {
   return (
