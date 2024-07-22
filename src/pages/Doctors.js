@@ -3,6 +3,7 @@ import { dataDoctors } from "../components/DoctorsInfo/dataDoctors";
 import Buttons from "../components/DoctorsInfo/Buttons";
 import DoctorsInfo from "../components/DoctorsInfo/DoctorsInfo";
 import Footer from "../components/Footer";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function Doctors() {
 
@@ -23,6 +24,7 @@ function Doctors() {
         <DoctorsInfo doctors={doctors} />
         </div>
         <Footer />
+        <ScrollToTopBtn />
         </div>
     )
 }

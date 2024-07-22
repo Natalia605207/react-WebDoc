@@ -10,7 +10,7 @@ export const AccordionItem = ({title, content}) => {
     }
 
     return(<div>
-        <div className={isOpen ? 'active' : 'default'} onClick={handleIsOpen}>
+        <div className={isOpen ? 'activeAccordion' : 'default'} onClick={handleIsOpen}>
             <p className="accordion-header">{title}</p>
             <FaAngleDown className="arrow"/>
         </div>

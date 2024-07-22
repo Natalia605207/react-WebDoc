@@ -6,8 +6,7 @@ import imgTwo from "../../assets/ImageTwo.jpg";
 import imgThree from "../../assets/ImageThree.jpg";
 import Button from 'react-bootstrap/Button';
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
-
+import { HashLink as Link } from "react-router-hash-link";
 
 function CarouselPage() {
 
@@ -44,7 +43,7 @@ function CarouselPage() {
             <h2 className={`font`}>Online consultations</h2>
             <p className={`font smaller`}>Fast, convenient and affordable</p>
             <Button style={consultationBtn}>
-            <Link to="/form" className="form-link">Get Help</Link>
+            <Link to="/#form-page" className="form-link">Get Help</Link>
             </Button>
           </Carousel.Caption>
         </Carousel.Item>
@@ -59,7 +58,7 @@ function CarouselPage() {
             <h2 className={`font`}>Best doctors</h2>
             <p className={`font smaller`}>Highly-qualified specialists</p>
             <Button style={consultationBtn}>
-            <Link to="/form" className="form-link">Get Help</Link>
+            <Link to="/#form-page" className="form-link">Get Help</Link>
             </Button>
           </Carousel.Caption>
         </Carousel.Item>

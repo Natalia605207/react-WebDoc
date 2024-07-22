@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import Footer from "../components/Footer";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function PrivacyPolicy() {
     return(
@@ -42,6 +43,7 @@ function PrivacyPolicy() {
             <p className="privacy-passage">For the settlement of disputes arising from this policy, English law will be fully applied. Any disputes must be filed in the court of the district where the company's headquarters are located.</p>
         </div>
         <Footer />
+        <ScrollToTopBtn />
         </div>
     )
 }

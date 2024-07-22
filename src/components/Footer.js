@@ -8,6 +8,10 @@ import {
   MDBRow
 } from 'mdb-react-ui-kit';
 import Help from './Help';
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -23,16 +27,16 @@ export default function Footer() {
     
             <div>
               <a href='https://www.facebook.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
-                <MDBIcon fab icon="facebook-f" />
+                <FaFacebookF />
               </a>
               <a href='https://www.twitter.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
-                <MDBIcon fab icon="twitter" />
+              <FaXTwitter />
               </a>
               <a href='https://www.instagram.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
-                <MDBIcon fab icon="instagram" />
+              <FaInstagram />
               </a>
               <a href='https://www.linkedin.com' className='me-4 text-light bg-dark' target="_blank" rel="noreferrer">
-                <MDBIcon fab icon="linkedin" />
+                <FaLinkedin />
               </a>
             </div>
           </section>
@@ -103,7 +107,7 @@ export default function Footer() {
                   </p>
                   <p>
                     <MDBIcon icon="phone" className="me-3" /> 
-                    <a href='tel:+79168391700 + 01 234 567 88' className='text-reset text-decoration-none'>
+                    <a href='tel:+79168391700' className='text-reset text-decoration-none'>
                     + 01 234 567 88
                     </a>
                   </p>
@@ -113,7 +117,8 @@ export default function Footer() {
           </section>
     
           <div className='text-center p-4 text-light' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-            © 2021 Copyright: WebDoc.com
+            <p className="bottom-info">© 2021 Copyright: WebDoc.com</p>
+            <p className="bottom-info top-margin">Designed and developed by Natalia Musikhina</p>
           </div>
         </MDBFooter>
         </div>

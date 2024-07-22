@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Navbar.css";
 import { FaLaptopMedical } from "react-icons/fa";
-import { FaAlignRight } from "react-icons/fa";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { HiOutlineX } from "react-icons/hi";
 
 function Navbar() {
-
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -19,7 +19,7 @@ function Navbar() {
                 </Link>
             </div>
             <div className="menu-icon" onClick={handleClick}>
-                <FaAlignRight className="bar" />
+                {click ? <HiOutlineX className="bar" /> : <HiOutlineMenuAlt3 className="bar" />}
             </div>
             <div className={click ? 'nav-menu active' : 'nav-menu'}>
                 <ul className="nav-list">
@@ -36,11 +36,11 @@ function Navbar() {
                             <Link to="/about" className="nav-link" onClick={closeMobileMenu}>Our Company</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="/contacts" className="nav-link" onClick={closeMobileMenu}>Contacts</Link>
+                            <Link to="/#contacts" className="nav-link" onClick={closeMobileMenu}>Contacts</Link>
                         </li>
                 </ul>
                 <button className="consultation-btn">
-                    <Link to="/form" className="form-link" onClick={closeMobileMenu}>Make an Appointment</Link>
+                    <Link to="/#form-page" className="form-link" onClick={closeMobileMenu}>Make an Appointment</Link>
                 </button>
             </div>
         </nav>

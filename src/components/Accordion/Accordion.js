@@ -4,8 +4,8 @@ import './Accordion.css';
 
 export const Accordion = () => {
     return (<div>
-        {list.map((item, index) => 
-        <AccordionItem key={index}
+        {list.map((item) => 
+        <AccordionItem key={item.id}
         title={item.title}
         content={item.content}
         />

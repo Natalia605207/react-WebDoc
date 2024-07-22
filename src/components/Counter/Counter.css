@@ -41,7 +41,7 @@
     }
   }
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 1100px) {
     .counter {
         padding: 60px 5px;
     }
@@ -51,7 +51,7 @@
     }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 780px) {
     .counter-row{
         grid-template-columns: 1fr;
     }

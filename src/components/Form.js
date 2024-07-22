@@ -1,8 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { ValidationError, useForm } from '@formspree/react';
 import "../App.css";
 import icon from '../assets/appointment-icon.png';
+import * as React from 'react';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 function Form() {
   const [state, handleSubmit] = useForm("xayrynde");
@@ -53,7 +56,7 @@ function Form() {
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       </div>
       <div>
-        <input type="checkbox" className="checkbox" /> <span className="private-policy">I agree that Web Doctor LLC will process my personal data in accordance with the <Link to="/privacy"><span className="privacy-link">Privacy Policy</span></Link>, I agree with the Privacy Policy and I give my consent to communicate with me.</span> <br />
+      <Checkbox {...label} color="success" /> <span className="private-policy">I agree that Web Doctor LLC will process my personal data in accordance with the <Link to="/privacy"><span className="privacy-link">Privacy Policy</span></Link>, I agree with the Privacy Policy and I give my consent to communicate with me.</span> <br />
         <p className="private-policy">Your consent is voluntary and you are free to withdraw it at any time. More information is available in our <Link to="/privacy"><span className="privacy-link">Privacy Policy</span></Link>.</p>
       </div>
         <button className="form-btn" type="submit" disabled={state.submitting}>Send</button>

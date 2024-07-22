@@ -1,6 +1,7 @@
 import { Accordion } from "../components/Accordion/Accordion";
 import "../App.css";
 import Footer from "../components/Footer";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function Faqs() {
     return (
@@ -10,6 +11,7 @@ function Faqs() {
         </div>
         <Accordion />
         <Footer />
+        <ScrollToTopBtn />
         </div>
     )
 }

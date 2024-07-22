@@ -8,6 +8,7 @@ import Form from "../components/Form";
 import HomePageDoctors from "../components/HomePageDoctors";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Footer from "../components/Footer";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function Home() {
     return (
@@ -18,8 +19,13 @@ function Home() {
             <Counter />
             <HomePageDoctors />
             <Testimonials />
+            <div id="form-page">
             <Form />
+            </div>
+            <div id="contacts">
             <Footer />
+            </div>
+            <ScrollToTopBtn />
         </div>
     )
 }

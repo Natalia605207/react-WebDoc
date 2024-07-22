@@ -252,15 +252,15 @@ label {
 }
 
 .faqs-photo {
-    background-image: url("https://img.freepik.com/free-photo/doctor-reading-coronavirus-patient-medical-chart_53876-139569.jpg?w=1380&t=st=1704321834~exp=1704322434~hmac=083ca19f410c419683ac08cd7f6773975b6b1b4321d562c5af6df730d06a60bc");
+    background-image: url("/src/assets/faqs.jpg");
 }
 
 .aboutUs-photo {
-    background-image: url("https://img.freepik.com/free-photo/close-up-doctor-holding-eyeglasses_23-2148728350.jpg?size=626&ext=jpg&uid=R86882888&ga=GA1.1.748415115.1670098303&semt=sph");
+    background-image: url("/src/assets/about.jpg");
 }
 
 .doctors-photo {
-    background-image: url("https://img.freepik.com/free-photo/team-of-healthcare-experts-examining-xray-image-at-medical-clinic_637285-11162.jpg?size=626&ext=jpg&uid=R86882888&ga=GA1.1.748415115.1670098303&semt=ais");
+    background-image: url("/src//assets//doctors.jpg");
 }
 
 .top-heading {
@@ -320,6 +320,39 @@ label {
     color:#000000;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 5;
+}
+  
+  .scroll-to-top button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    opacity: .7;
+  }
+  
+  .scroll-to-top button:hover{
+    opacity: 1;
+  }
+
+.topBtn-icon {
+    font-size: 40px;
+    color:#009282;
+}
+
+.top-margin {
+    margin: 0px;
+}
+
+.bottom-info {
+    font-size: 15px;
+    font-weight: 200;
+}
+
 @media screen and (max-width: 1300px) {
     .line {
         padding: 60px 50px;
@@ -333,6 +366,16 @@ label {
 @media screen and (max-width: 1200px) {
 .about-doctor {
     margin: 0px;
+}
+
+.scroll-to-top {
+    bottom: 85px;
+    right: 20px;
+}
+
+.top-margin {
+    margin: 0px;
+    padding-bottom: 70px;
 }
 }
 
@@ -441,6 +484,11 @@ label {
     .form-btn {
         padding: 7px 30px;
         font-size: 17px;
+    }
+
+    .scroll-to-top {
+        right: 10px;
+        bottom: 85px;
     }
 }
 

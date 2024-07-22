@@ -1,6 +1,7 @@
 import "../App.css";
 import Footer from "../components/Footer";
 import OurCompanyInfo from "../components/OurCompanyInfo";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function AboutUs() {
     return (
@@ -10,6 +11,7 @@ function AboutUs() {
         </div>
             <OurCompanyInfo />
             <Footer />
+            <ScrollToTopBtn />
         </div>
     )
 }

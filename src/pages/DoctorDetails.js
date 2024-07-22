@@ -8,6 +8,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import { FaStethoscope } from "react-icons/fa";
 import Form from "../components/Form";
 import Footer from "../components/Footer";
+import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 function DoctorDetails() {
     const navigate = useNavigate();
@@ -51,6 +52,7 @@ function DoctorDetails() {
                     </div>
                     <Form />
                     <Footer />
+                    <ScrollToTopBtn />
                     </div>
                 )
             })}
