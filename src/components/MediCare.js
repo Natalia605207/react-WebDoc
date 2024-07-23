@@ -1,7 +1,7 @@
 import React from "react";
 import { dataMediCare } from "./dataMediCare";
 import "../App.css";
-
+import { Zoom } from "react-awesome-reveal";
 
 function MediCare() {
     return(
@@ -10,6 +10,7 @@ function MediCare() {
                 <h2 className="heading">Medical Care Away from Home</h2>
                 <p className="text">Moving to a new country can often make it difficult to obtain fast and high-quality medical care. Sometimes, you may need to ask a question and quickly receive an answer or advice, especially when it comes to childhood illnesses.</p>
             </div>
+            <Zoom triggerOnce={true} duration="1500">
             <div className="row">
                 {dataMediCare.map((point) => {
                     const {id, icon, text} = point;
@@ -21,6 +22,7 @@ function MediCare() {
                     )
                 })}
             </div>
+            </Zoom>
         </section>
     )
 }

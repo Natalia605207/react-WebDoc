@@ -1,6 +1,7 @@
 import React from "react";
 import { dataGeneralInfo } from "./dataGeneralInfo";
 import "../App.css";
+import { Zoom } from "react-awesome-reveal";
 
 function GeneralInfo() {
     return(
@@ -17,8 +18,10 @@ function GeneralInfo() {
                     const {id, icon, text} = point;
                     return(
                         <div key={id} className="column general">
+                            <Zoom triggerOnce={true} duration="1200">
                             <p className="general-icon">{icon}</p>
                             <p className="questions">{text}</p>
+                            </Zoom>
                         </div>
                     )
                 })}

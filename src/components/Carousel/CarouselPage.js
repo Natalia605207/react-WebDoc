@@ -7,6 +7,7 @@ import imgThree from "../../assets/ImageThree.jpg";
 import Button from 'react-bootstrap/Button';
 import Swal from "sweetalert2";
 import { HashLink as Link } from "react-router-hash-link";
+import { Zoom } from "react-awesome-reveal";
 
 function CarouselPage() {
 
@@ -40,11 +41,13 @@ function CarouselPage() {
             alt="First slide"
           />
           <Carousel.Caption className={`carousel-text`}>
+            <Zoom triggerOnce={true} duration="1500">
             <h2 className={`font`}>Online consultations</h2>
             <p className={`font smaller`}>Fast, convenient and affordable</p>
             <Button style={consultationBtn}>
             <Link to="/#form-page" className="form-link">Get Help</Link>
             </Button>
+            </Zoom>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -55,11 +58,13 @@ function CarouselPage() {
             alt="Second slide"
           />  
           <Carousel.Caption className={`carousel-text`}>
+          <Zoom triggerOnce={true} duration="1500">
             <h2 className={`font`}>Best doctors</h2>
             <p className={`font smaller`}>Highly-qualified specialists</p>
             <Button style={consultationBtn}>
             <Link to="/#form-page" className="form-link">Get Help</Link>
             </Button>
+            </Zoom>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -70,9 +75,11 @@ function CarouselPage() {
             alt="Third slide"
           />   
         <Carousel.Caption className={`carousel-text`}>
+        <Zoom triggerOnce={true} duration="1500">
             <h2 className={`font`}>Promotion!</h2>
             <p className={`font smaller`}>Get your 30% discount</p>
             <Button style={consultationBtn} onClick={handleAlert}>Learn More</Button>
+        </Zoom>
         </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

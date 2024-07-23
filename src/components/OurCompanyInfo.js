@@ -3,17 +3,21 @@ import imageOne from "../assets/about-one.jpg";
 import imageTwo from "../assets/about-two.jpg";
 import imageThree from "../assets/about-three.jpg";
 import imageFour from "../assets/about-four.jpg";
+import { Fade } from "react-awesome-reveal";
 
 function OurCompanyInfo() {
     return(
         <div className="about-information">
+            <Fade direction="left" duration="1500" triggerOnce={true}>
             <div className="line">
                 <div>
                     <h3 className="about-heading">Who We Are?</h3>   
-                    <p className="privacy-passage">WebDoc is a medical online platform where users can get medical advice from doctors. Our virtual online medical help service provides the ultimate convenience and best health care. We are proud to be in the Telemedicine industry. Our doctor panel consists of medical practitioners, physicians and therapists from US, UK, UAE, India, Singapore, Germany, Russia and counting... WebDoc sticks to the highest standards when approving doctors to practice in the online doctor consultation service. We are adding new doctors very often. We verify our online doctors to ensure they are fully licensed so that the care we provide will always be of the highest quality.</p>          
+                    <p className="privacy-passage">WebDoc is a medical online platform where users can get medical advice from doctors. Our virtual online medical help service provides the ultimate convenience and best health care. We are proud to be in the Telemedicine industry. Our doctor panel consists of medical practitioners, physicians and therapists from US, UK, UAE, India, Singapore, Germany, Russia and counting... WebDoc sticks to the highest standards when approving doctors to practice in the online doctor consultation service. We are adding new doctors very often. We verify our online doctors to ensure they are fully licensed so that the care we provide will always be of the highest quality.</p>
                 </div>
                 <img className="about-photo" src={imageOne} alt="aboutUs" />
             </div>
+            </Fade>
+            <Fade direction="left" duration="1500" triggerOnce={true}>
             <div className="line reverse">
                 <img className="about-photo" src={imageTwo} alt="aboutUs" />
                 <div>
@@ -21,6 +25,8 @@ function OurCompanyInfo() {
                     <p className="privacy-passage">We provide various channels to contact our doctors such as posting as a health query or booking a slot for real time face-to-face consultation over HD video and phone (it will be a private/secure call back). One can use our service to consult with highly qualified physicians at the comfort of your home. When a doctor provides a quick medical advice online, he/she will be helping a patient who may otherwise have had to visit the emergency room. Our goal is to provide the highest level of online healthcare and to offer a unique service where any patient can receive consultation with any doctors irrespective of their geographical location. Our team strives to provide the best services in online healthcare.</p>          
                 </div>
             </div>
+            </Fade>
+            <Fade direction="left" duration="1500" triggerOnce={true}>
             <div className="line">
                 <div>
                     <h3 className="about-heading">Our Aim</h3>   
@@ -28,6 +34,8 @@ function OurCompanyInfo() {
                 </div>
                 <img className="about-photo" src={imageThree} alt="aboutUs" />
             </div>
+            </Fade>
+            <Fade direction="left" duration="1500" triggerOnce={true}>
             <div className="line reverse">
                 <img className="about-photo" src={imageFour} alt="aboutUs" />
                 <div>
@@ -35,6 +43,7 @@ function OurCompanyInfo() {
                     <p className="privacy-passage">WebDoc's mission is to create a platform that is easily accessible and trustworthy for both Doctors and Patients. We believe in constantly evolving and creating different services that will be suitable for any user based on his requirements. We aim at making WebDoc the best at both the quality of the service provided and the time of delivery of the service. We want to build a highly-performed, simple-to-use platform.</p>          
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

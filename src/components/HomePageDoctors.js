@@ -2,8 +2,7 @@ import React from "react";
 import "../App.css";
 import { dataDoctors } from "./DoctorsInfo/dataDoctors";
 import { Link } from "react-router-dom";
-
-
+import { Zoom } from "react-awesome-reveal";
 
 function HomePageDoctors() {
     return(
@@ -12,6 +11,7 @@ function HomePageDoctors() {
                 <h1 className="heading">Meet Our Doctors</h1>
                 <p className="text">Get a private consultation in more that 20 specialities</p>
             </div>
+            <Zoom triggerOnce={true} duration="1500">
             <div className="row">
                 {dataDoctors.slice(0,3).map((doctor) => {
                     const {id, image, name, profession, experience, consults} = doctor;
@@ -26,6 +26,7 @@ function HomePageDoctors() {
                     )
                 })}
             </div>
+            </Zoom>
             <div className="center">
             <button className="form-btn">
                     <Link to="/doctors" className="doctors-link">View All Doctors</Link>
