@@ -24,5 +24,5 @@
     background-size: 12px 12px;
     animation: l7 1s infinite;
   }
-  
+
   @keyframes l7 {to{transform: rotate(.5turn)}}
