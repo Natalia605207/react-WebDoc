@@ -3,9 +3,12 @@ import Footer from "../components/Footer";
 import OurCompanyInfo from "../components/OurCompanyInfo";
 import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 import { Zoom } from "react-awesome-reveal";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function AboutUs() {
+    const { isAuthenticated } = useAuth0();
     return (
+        !isAuthenticated && (
         <div className="aboutUs">
         <div className="top-photo aboutUs-photo">
             <Zoom duration="1500">
@@ -17,6 +20,6 @@ function AboutUs() {
             <ScrollToTopBtn />
         </div>
     )
-}
+)}
 
 export default AboutUs;

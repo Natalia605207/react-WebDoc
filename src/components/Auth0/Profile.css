@@ -1,0 +1,101 @@
+.user-account {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.3);
+    background: #f2f2f2;
+    padding: 3px 50px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.companyName {
+    color: #61bcba;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.logo-account {
+    margin: 0px 10px 0px 8px;
+    font-size: 45px;
+    color:#61bcba;
+}
+
+.logout-btn {
+    color:#61bcba;
+    font-size: 25px;
+}
+
+.logout-btn:hover {
+    color:#009282;
+}
+
+.column-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px 50px 30px 0px;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    font-size: 15px;
+    margin: 3px 0px;
+}
+
+.account-heading {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 10px 70px;
+    color:#009282;
+}
+
+.welcome-phrase {
+    color:#009282;
+}
+
+.bottom-fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 540px) {
+    .flex-space {
+        padding: 3px 10px;
+    }
+
+    .column-end {
+        padding: 10px 10px 20px 0px;
+    }
+
+    .account-heading {
+        font-size: 30px;
+        margin: 5px 7px 50px;
+    }
+
+    .welcome-phrase {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}

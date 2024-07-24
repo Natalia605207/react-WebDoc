@@ -9,10 +9,14 @@ import { FaStethoscope } from "react-icons/fa";
 import Form from "../components/Form";
 import Footer from "../components/Footer";
 import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
+import { useAuth0 } from "@auth0/auth0-react";
+import { Fade } from "react-awesome-reveal";
 
 function DoctorDetails() {
     const navigate = useNavigate();
     const { title } = useParams();
+
+    const { isAuthenticated } = useAuth0();
 
     const [showText, setShowText] = useState(false);
     
@@ -21,10 +25,12 @@ function DoctorDetails() {
         setShowText(!showText);
     }
     return (
+        !isAuthenticated && (
         <div>
             {dataDoctors.filter(element => element.title === title).map((elem) => {
                 const {id, image, name, profession, experience, consults, education, treatments, showMore} = elem;
                 return(
+                    <Fade direction="left" duration="1500" triggerOnce={true}>
                     <div key={id}>
                     <div className="line about-doctor">
                         <img className="about-photo" src={image} alt="doctor" />
@@ -50,14 +56,15 @@ function DoctorDetails() {
                             </div>
                         </div>
                     </div>
-                    <Form />
-                    <Footer />
-                    <ScrollToTopBtn />
                     </div>
+                    </Fade>
                 )
             })}
-        </div>
+        <Form />
+        <Footer />
+        <ScrollToTopBtn />
+    </div>
     )
-}
+)}
 
 export default DoctorDetails;

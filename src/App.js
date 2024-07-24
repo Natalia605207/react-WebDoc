@@ -18,8 +18,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import { BottomNav } from "./components/BottomNavigation/BottomNav";
 import CookieConsent from "react-cookie-consent";
 import Cookies from 'js-cookie';
+import Logout from "./components/Auth0/Logout";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoaderPage from "./components/Loader/LoaderPage";
 
 function App() {
+  const {isLoading} = useAuth0();
+  if (isLoading) return (
+    <LoaderPage />
+    );
   return (
   <>
       <CookieConsent
@@ -45,6 +52,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <Navbar />
+        <Logout />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/doctors" element={<Doctors/>} />

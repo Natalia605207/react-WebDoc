@@ -103,7 +103,37 @@
     background: #009282;
 }
 
+.login-btn {
+    color:#61bcba;
+    font-size: 23px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    color: #009282;
+}
+
+@media screen and (max-width: 1450px) {
+    .nav-list {
+        margin: 0px 0px 0px 130px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .nav-list {
+        margin: 0px 0px 0px 50px;
+        gap: 25px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
+    .nav-list {
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .NavbarItems {
         position: relative;
     }
@@ -175,10 +205,23 @@
         font-size: 32px;
         cursor: pointer;
     }
-}
 
-@media screen and (max-width: 1200px) {
-.bar {
-    font-size: 26px;
-}
+    .bar {
+        font-size: 26px;
+    }
+
+    .login-btn {
+        color:#ffffff;
+        margin-right: 0px;
+    }
+
+    .login-btn:hover {
+        color:#ffffff;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

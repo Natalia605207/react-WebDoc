@@ -4,10 +4,13 @@ import { MdHome } from "react-icons/md";
 import { MdDiversity1 } from "react-icons/md";
 import { MdHelpCenter } from "react-icons/md";
 import { MdLocalHospital } from "react-icons/md";
-
+import Login from '../Auth0/Login';
+import { useAuth0 } from "@auth0/auth0-react";
 
 export const BottomNav = () => {
+    const { isAuthenticated } = useAuth0();
     return(
+        !isAuthenticated && (
         <div className="bottom-nav">
             <Link to="/" className="bottomNav-link">
             <div className="bottom-column">
@@ -33,6 +36,10 @@ export const BottomNav = () => {
                 <p className="bottomNav-linkName">About</p>
             </div>
             </Link>
+            <div className="bottom-column">
+            <Login />
+            <p className="bottomNav-linkName">Log in</p>
+            </div>
         </div>
     )
-}
+)}

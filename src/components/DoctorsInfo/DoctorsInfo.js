@@ -7,7 +7,9 @@ function DoctorsInfo({doctors}) {
                 const {id, image, name, profession, experience, consults} = element;
                 return(
                     <div key={id} className="column point">
+                        <Link to={`/doctors/${element.title}`}>
                         <img className="doctor-image" src={image} alt="doctor" />
+                        </Link>
                         <p className="doctor-name">{name}</p>
                         <p className="profession">{profession}</p>
                         <p className="privacy-passage margin">{experience} years of experience</p>

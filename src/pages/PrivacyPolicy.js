@@ -2,9 +2,12 @@ import React from "react";
 import "../App.css";
 import Footer from "../components/Footer";
 import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function PrivacyPolicy() {
+    const { isAuthenticated } = useAuth0();
     return(
+        !isAuthenticated && (
         <div>
         <div className="privacy">
             <h1 className="heading-policy">Privacy Policy</h1>
@@ -46,6 +49,6 @@ function PrivacyPolicy() {
         <ScrollToTopBtn />
         </div>
     )
-}
+)}
 
 export default PrivacyPolicy;

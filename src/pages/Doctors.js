@@ -5,10 +5,11 @@ import DoctorsInfo from "../components/DoctorsInfo/DoctorsInfo";
 import Footer from "../components/Footer";
 import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 import { Zoom } from "react-awesome-reveal";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Doctors() {
-
     const [doctors, setDoctors] = useState(dataDoctors);
+    const { isAuthenticated } = useAuth0();
 
     const filterDoctors = (searchTerm) => {
         const chosenDoctors = dataDoctors.filter(doctor => doctor.searchTerm === searchTerm);
@@ -16,6 +17,7 @@ function Doctors() {
     }
 
     return (
+        !isAuthenticated && (
         <div className="our-doctors">
         <div className="top-photo doctors-photo">
         <Zoom duration="1500">
@@ -30,6 +32,6 @@ function Doctors() {
         <ScrollToTopBtn />
         </div>
     )
-}
+)}
 
 export default Doctors;
