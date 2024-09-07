@@ -118,7 +118,7 @@ export default function Footer() {
     
           <div className='text-center p-4 text-light' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
             <p className="bottom-info">© 2021 Copyright: WebDoc.com</p>
-            <p className="bottom-info top-margin">Designed and developed by Natalia Musikhina</p>
+            <p className="bottom-info top-margin">Designed and developed by <a href="https://natalia-webdev.com/" target="_blank" rel="noreferrer" className="portfolio-link">Natalia Musikhina</a></p>
           </div>
         </MDBFooter>
         </div>

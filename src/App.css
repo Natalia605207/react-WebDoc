@@ -353,6 +353,16 @@ label {
     font-weight: 200;
 }
 
+.portfolio-link {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.portfolio-link:hover {
+    color:#61bcba;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1300px) {
     .line {
         padding: 60px 50px;
